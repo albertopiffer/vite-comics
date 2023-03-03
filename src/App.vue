@@ -1,23 +1,23 @@
-<script setup>
-import AppFooter from './components/dcFooter.vue'
-import AppHeader from './components/dcHeader.vue'
-import AppMain from './components/dcMain.vue'
+<script>
+import dcHead from './components/dcHead.vue'
+import dcMain from './components/dcMain.vue'
+import dcFooter from './components/dcFooter.vue'
 
 export default {
   components: {
-    AppFooter,
-    AppHeader,
-    AppMain,
+    dcHead,
+    dcMain,
+    dcFooter,
   }
 }
 </script>
 
 <template>
-  <div>
-    <AppHeader />
-    <AppMain />
-    <AppFooter />
-  </div>
+  <dcHead />
+  <dcMain />
+  <dcFooter />
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@use './style/main.scss';
+</style>
